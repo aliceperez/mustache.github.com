@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Hello, soy Alice Perez una apasionada diseñadora y programadora web">
+    <meta name="author" content="Alice Perez">
+    <title> Alice Pérez| Web site</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/circle-animate.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
+
+    <!-- CUSTOM STYLES -->
+    <style>
+        /* GENERAL STYLES */
+        .pad-bottom {
+            padding-bottom: 40px;
+        }
+
+        /* PIE CHART STYLES */
+        .chart {
+            position: relative;
+            display: inline-block;
+            width: 200px; /* SHOUL BE EQUAL - Like 200px */
+            height: 200px; /* SHOUL BE EQUAL - Like 200px */
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .chart canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .percent {
+            display: inline-block;
+            line-height: 200px; /* SHOUL BE EQUAL - Like 200px */
+            z-index: 2;
+            font-size: 2em;
+        }
+
+        .percent:after {
+            content: '%';
+            margin-left: 0.1em;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+   <!-- Menu de navegacion -->
+   <nav class="navbar navbar-default navbar-fixed-top" rol="navigation">
+     <div class="container">
+        <div class="navbar-header page-scroll">
+           <button type="button" class="navbar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+
+          </button>
+          <a class="navbar-brand" href="#">
+              <img alt="Brand" src="image/miLogo.svg" style="width:300px; margin:-60px 0 0 -80px">
+          </a>
+
+      </div>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+       <ul class="nav navbar-nav" style="float:right">
+          <li>
+             <a class="page-scroll u-anchor" href="#service">Servicios</a>
+         </li>
+         <li>
+             <a class="page-scroll u-anchor" href="#about">¿Quién es Alice?</a>
+         </li>
+         <li>
+             <a class="page-scroll u-anchor" href="#portafolio">Portafolio</a>
+         </li>
+         <li>
+             <a class="page-scroll u-anchor" href="#contacto">Hablemos</a>
+         </li>
+     </ul>
+ </div>
+</div>
+</nav>
+<!-- Home -->
+<section id="inicio" class="inicio-section">
+ <div class="container">
+    <div class="row">
+       <h1 class="animated fadeInDown">Alice Pérez</h1>
+       <h2 class="u-title animated fadeInUp">UI/UX designer & web developer</h2>
+       <a href="#service" class="btn btn-circle page-scroll animated flash">
+        <i class="fa fa-angle-double-down animated"></i>
+    </a>
+</div>
+</div>
+</section>
+<!-- Service-->
+<section id="service" class="Service-section">
+ <div class="container">
+    <div class="row">
+      <h2 class="u-h2 os-animation" data-os-animation="slideInDown" data-os-animation-delay="0s"> Servicios </h2>
+      <p class="u-big-text">
+        Puedo diseñar y programar creando en el usuario una buena experiencia.
+    </p>
+</div>
+<div class="row icon-box os-animation" data-os-animation="slideInRight" data-os-animation-delay="0s">
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="image/design.png" alt="...">
+      <div class="caption">
+        <h3 class="u-subtitle">Diseño web</h3>
+        <p class="u-text">Yo puedo diseñar hermosas interfaces, utilizando las ultimas tendencias en diseño web, usando mi creatividad puedo hacer algo bonito y fácil de usar.</p>
+    </div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="image/responsive.png" alt="...">
+      <div class="caption">
+        <h3 class="u-subtitle">Desarrollo web</h3>
+        <p class="u-text">Utilizando un lenguaje de programación puedo crear sistemas web completos para satisfacer las necesidades de los clientes.</p>
+    </div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="image/desktop.png" alt="...">
+      <div class="caption">
+        <h3 class="u-subtitle">User experience</h3>
+        <p class="u-text">En todo lo que hago pienso primero en la experiencia que tendrá el usuario al entrar al sitio, que garantice su permanencia en la página.</p>
+    </div>
+</div>
+</div>
+</div>    
+</div>
+</section>
+<!--about-->
+<section id="about" class="about-section">
+ <div class="container">
+    <div class="row">
+      <figure>
+        <img src="image/alice.jpg" class="foto-box os-animation" data-os-animation="pulse" data-os-animation-delay="0s">
+    </figure>
+    <div class="bg-bio">
+        <p class="u-text-content">
+            Soy una apasionada diseñadora y desarrolladora web de 21 años. Estudiante de ingeniería de sistemas y con estudios técnicos sobre desarrollo, diseño web y user experience.
+        </p>
+    </div>  
+</div>
+</div>
+</section>
+<section id="habilidades" class="habilidades">
+    <div class="container">
+        <div class="row">
+            <h2 class="u-h2 os-animation" data-os-animation="slideInDown" data-os-animation-delay="0s"> Habilidades </h2>
+        </div>
+        <!-- <iframe src="skills/index.html" width="100%" height="700px" scrolling="no" style="border:none; "></iframe> -->
+        <!-- NAVBAR CODE END -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <span class="chart" data-percent="85">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>CSS</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="chart" data-percent="90">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>HTML </h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="chart" data-percent="90">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>BOOTSTRAP</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="chart" data-percent="80">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>PSD TO HTML</h4>
+                </div>
+
+            </div>
+            <!-- ROW END -->
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <span class="chart" data-percent="75">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>WORDPRESS</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="chart" data-percent="50">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>ANGULAR</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="chart" data-percent="45">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>GIT</h4>
+                </div>
+                <div class="col-md-3">
+                    <span class="chart" data-percent="50">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>INGLES</h4>
+                </div>
+
+            </div>
+        </div>
+        <!-- CONATINER END -->
+
+    </div>
+</section>
+<!-- portafolio Section -->
+<section id="portafolio" class="portafolio-section ">
+   <div class="container-fluid no-padding">
+    <div class="row no-gutter">
+        <div class="col-lg-4 col-sm-6">
+            <a href="#" class="portfolio-box">
+                <img src="image/portfolio/1.jpg" class="img-responsive" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            Categoría:Rediseño
+                        </div>
+                        <div class="project-name">
+                            JsonPlaceHolder
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <a href="#" class="portfolio-box">
+                <img src="image/portfolio/2.jpg" class="img-responsive" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            Categoría:Rediseño
+                        </div>
+                        <div class="project-name">
+                            Mustache
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <a href="#" class="portfolio-box">
+                <img src="image/portfolio/3.jpg" class="img-responsive" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            Categoría:Rediseño
+                        </div>
+                        <div class="project-name">
+                            Composser
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <a href="#" class="portfolio-box">
+                <img src="image/portfolio/4.jpg" class="img-responsive" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            Categoría:PSD TO HTML
+                        </div>
+                        <div class="project-name">
+                            Notify
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <a href="#" class="portfolio-box">
+                <img src="image/portfolio/5.jpg" class="img-responsive" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            Categoría:Unstyle page
+                        </div>
+                        <div class="project-name">
+                            One page
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <a href="#" class="portfolio-box">
+                <img src="image/portfolio/6.jpg" class="img-responsive" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            Categoría:one page
+                        </div>
+                        <div class="project-name">
+                            404-page not found
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</section>
+<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>¿Le interesan proyectos como estos?</h2>
+            <a href="#contacto" class="btn-plus">Hablemos!</a>
+        </div>
+    </div>
+</aside>
+<!-- contacto -->
+<section id="contacto" class="contacto-section">
+ <div class="container">
+  <h2 class="u-h2 os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s"> cuentame tu proyecto</h2>
+  <p class="u-text-content os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s">
+   Si llegaste hasta aquí, es porque te interesa trabajar conmigo
+   <br>escribe:<br> alicejohannaperezvillanueva@gmail.com
+</p>
+
+<p class="u-h3 os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">
+   Y si quieres conocerme más aquí estan mis redes sociales
+</p>
+<div id="footer1" class="enlinea os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s">
+   <figure>
+       <a href="https://www.facebook.com/alice.perezvillanueva"> <img id="fb" src="image/fb.png" alt="texto para ayudas visuales"class="animated rotateIn"></a> 
+   </figure>
+   <figure>
+    <a href="https://do.linkedin.com/in/alicejperez"><img id="in" src="image/in.png" alt="texto para ayudas visuales"class="animated rotateIn"></a>
+</figure> 
+<figure>
+    <a href="https://twitter.com/AlicePerezVilla"><img id="tw" src="image/tw.png" alt="texto para ayudas visuales"class="animated rotateIn"></a>   
+</figure>
+<figure>
+    <a href="https://github.com/AlicePerez"><img id="gm" src="image/gh.png" alt="texto para ayudas visuales"class="animated rotateIn"></a>          
+</figure>
+</div>
+</div>
+</section>
+<!-- CUSTOM SCRIPTS -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.easypiechart.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#about').waypoint(function() {
+            $('.chart').easyPieChart({
+                easing: 'easeOutBounce',
+                onStep: function (from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                },
+                barColor: '#ff7d6f',
+                lineWidth: 10,
+                size: 200,
+                animate: 2000,
+            });
+        });
+    });
+</script>
+
+</body>
+<footer>
+
+    <div id="footer2"><p> Diseñado por: Alice Pérez | Todos los derechos reservados</p></div>
+</footer>
+</html>
